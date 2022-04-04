@@ -7,7 +7,7 @@ const Cart = props => {
             [{
                 id: 'c1',
                 name: 'Sushi',
-                amount: 2,
+                quantity: 2,
                 price: 12.99
             }].map(item => <li>{item.name}</li>)
         }
