@@ -23,7 +23,7 @@ const CartProvider = props => {
     const cartContext = {
         items: state.items,
 
-        totalAmount: state.totalPrice,
+        totalPrice: state.totalPrice,
 
         addToCart: item => {
             action({type: 'ADD', item});
