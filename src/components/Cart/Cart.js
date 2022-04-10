@@ -23,7 +23,7 @@ const Cart = props => {
             </div>
             <div className={classes.actions}>
                 <button className={classes['button--alt']} onClick={props.onClose}>Close</button>
-                <button className={classes.button}>Order</button>
+                {(cartCtx.items.length > 0) && <button className={classes.button}>Order</button>}
             </div>
         </Modal>
     );
